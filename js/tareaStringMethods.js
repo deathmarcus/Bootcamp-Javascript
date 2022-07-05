@@ -6,7 +6,7 @@
 let cadena = prompt('Dame un enunciado');
 let tempCadena = cadena.length;
 console.log(`El enunciado tiene ${tempCadena} caracteres`);
-tempCadena = cadena.match(/[aeiou]/gi);
+tempCadena = cadena.match(/[aeiou]/gi); //<--The g and i modifiers have these meanings: g = global, match all instances of the pattern in a string, not just one |i = case-insensitive
 console.log(`El enunciado tiene ${tempCadena.length} vocales y son ${tempCadena}`);
 tempCadena = cadena.split(" ");
 console.log(`Las palabras son: ${tempCadena}`);
