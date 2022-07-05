@@ -1,3 +1,4 @@
+    
     // ! Identificar el numero mayor de dos usando el operador ternary
 
     // let numA = parseInt(prompt('Ingresa el primer numero'));
