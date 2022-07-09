@@ -90,7 +90,25 @@
     // Pedir al usuario un numero del 1 al 10 e imprimir la tabla de multiplicar de ese número
     // Usando loops1
 
- // ! Ejercicio 3
+// ! Practica Grupal 1
+//  Ejercicio 1
+    // Pedir el usuario un número entre 10 y 100
+    // * Imprimir todos los números pares que existen entre 1 y ese número
+    // * p.ej. 12 -> 2,4,6,8,10,12
+    // * Usar loops, condicionales...
+    // hint -> %
+
+
+//   Ejercicio 2
+    // Pedir al usaurio una oracion
+    // Imprimir un string con todas las vocales
+    // Imprimir un string con todas las consonantes
+    // Resultado de ejemplo
+    // p.ej. "Hola mundo"
+    // Consonantes -> hlmnd
+    // Vocales -> oauo
+   
+ //  Ejercicio 3
     //Pedir el usuario una palabra
     //Invertir esa palabra e imprimirla en consola
     //p.ej. 'Hola' -> 'aloh'
