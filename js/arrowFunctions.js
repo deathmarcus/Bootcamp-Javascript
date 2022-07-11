@@ -43,21 +43,21 @@
 
 // ? Practica 2
 
-const palabra = () => {
-    let palabra = prompt("Please type a word or sentence");
-    let sinEspacios = palabra.replaceAll(' ' , '');
-    let k = sinEspacios.length;
-    let invertida = '';
-    for (let i = (k - 1); i >= 0; i--) {
-        invertida += sinEspacios[i];
-    }
-    console.log(invertida);
-    if (sinEspacios === invertida) {
+// const palabra = () => {
+//     let palabra = prompt("Please type a word or sentence");
+//     let sinEspacios = palabra.replaceAll(' ' , '');
+//     let k = sinEspacios.length;
+//     let invertida = '';
+//     for (let i = (k - 1); i >= 0; i--) {
+//         invertida += sinEspacios[i];
+//     }
+//     console.log(invertida);
+//     if (sinEspacios === invertida) {
 
-        return 'Es palindromo';
-    }
+//         return 'Es palindromo';
+//     }
 
-    return 'No es palindromo';
-}
+//     return 'No es palindromo';
+// }
 
-alert(palabra());
+// alert(palabra());
