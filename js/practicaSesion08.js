@@ -16,22 +16,6 @@
 * Usar el metodo de array ForEach
 */
 
-// const city = ['méxicO','RIo', 'Los AngelEs', 'esTAMBUL'];
-// let cityMayus = [];
-
-// city.forEach((cv) => {
-//     cityMayus.push(cv.toUpperCase());
-// });
-// console.log(cityMayus);
-
-/**
-* Escribir una función
-* Reciba como parametro un array de ciudades
-* Retornar las ciudades capitalizadas
-* capitalize(['méxicO','RIo', 'Los AngelEs', 'esTAMBUL])
-* -> ['México','Rio', 'Los Angeles','Estambul']
-* Usar el metodo de array map
-*/
 // const capitalize = (arr) => {
 //   let capCities = [];
 //   arr.forEach((city) => {
@@ -45,3 +29,40 @@
 
 // console.log(result);
 
+
+/**
+* Escribir una función
+* Reciba como parametro un array de ciudades
+* Retornar las ciudades capitalizadas
+* capitalize(['méxicO','RIo', 'Los AngelEs', 'esTAMBUL])
+* -> ['México','Rio', 'Los Angeles','Estambul']
+* Usar el metodo de array map
+*/
+
+// const capitalizeMap = (arr) => {
+//     let capCities = arr.map((city) => {
+//       return `${city[0].toUpperCase()}${city.slice(1).toLowerCase()}`;
+//     });
+//     return capCities;
+//   };
+  
+// ! Parte 2
+// Función que reciba un array de nombre y esta debe devolver un string con las iniciales de los nombre
+ 
+//  getInitial = ['Ferdinand','Jose','Maria','Dora']
+
+// let arrayAString = (getInitial) => { 
+//         let temp = getInitial.split('').reverse().toString().replaceAll(',', '');
+//         return temp;
+//     };
+    
+//     console.log(arrayAString(getInitial));
+
+/*
+Practica
+Dado una arreglo compuesto por arreglos,
+* crea una función que calcule la suma de los arreglos
+*
+* additionMultiArr(  [ [1,2,3] , [1,3,2] , [3,2,1] ] )
+* -> 18
+*/
