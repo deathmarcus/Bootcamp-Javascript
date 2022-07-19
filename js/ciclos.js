@@ -46,7 +46,7 @@
     //     k++;
     // } while(k <= 3);
 
-// ! Practico 1
+// ! Practica 1
     //imprimir vocales de string usando for loop
     //*Usando solo ciclos y condicionales *
 
@@ -68,7 +68,7 @@
     // }
 
 
-// ! Practica2
+// ! Practica 2
     //imprimir solo las consonantes de un string usando for loop
     //*Solo ciclos y condicionales *
     
@@ -86,7 +86,7 @@
     //    }
     // }
 
-// !  Practica3
+// !  Practica 3
     // Pedir al usuario un numero del 1 al 10 e imprimir la tabla de multiplicar de ese número
     // Usando loops1
 
