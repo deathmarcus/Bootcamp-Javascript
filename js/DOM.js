@@ -91,7 +91,7 @@
 
 
 /**
-* Practica
+* ? Practica
 * 1. Agregar en nuestro index.html
 *  1.1. Un elemento lista <ul></ul> o <ol></ol>
 *  1.2 Agregar varios list items dentro de nuestra lista <li></li> con la clase "item"
@@ -111,7 +111,7 @@
 //     lista[i].removeAttribute('class', 'item');
 // };
 
-// Ejercicio 1 - Repicar este markup (HTML) usando JS
+// ? Ejercicio 1 - Repicar este markup (HTML) usando JS
 
 // <ul id="menu" class="menu">
 //        <li class="item__menu">Home</li>
@@ -119,25 +119,73 @@
 //        <li class="item__menu">About Us</li>
 //    </ul>
 
-let list = document.createElement('ul');
-let body = document.querySelector('body');
-body.appendChild(list);
-list.setAttribute("class", "menu");
-list.setAttribute("id", "menu");
+// let list = document.createElement('ul');
+// let body = document.querySelector('body');
+// body.appendChild(list);
+// list.setAttribute("class", "menu");
+// list.setAttribute("id", "menu");
 
-for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < 3; i++) {
+//     let item = document.createElement('li');
+//     if (i === 0) {
+//         item.textContent = `Home`;
+//         list.appendChild(item);
+//         item.setAttribute("class", "item_menu");
+//     } else if (i === 1) {
+//         item.textContent = `Products`;
+//         list.appendChild(item);
+//         item.setAttribute("class", "item_menu");
+//     } else {
+//         item.textContent = `About Us`;
+//         list.appendChild(item);
+//         item.setAttribute("class", "item_menu");
+//     }
+// }
+
+// ? Tarea
+// Dado un arreglo de koders
+// 1. Generar una lista con la clase "koders"
+// 2. Agregar a cada koder en esa lista
+// 3. A todos los koders agregarles la clase "item koder"
+let koders =  [
+   {
+       name: 'Ferdinand',
+       lastName: 'Bracho',
+       age: 30,
+       generation: 2,
+       modulos: ['js','python', 'git'],
+   },
+   {
+       name: 'Alfredo',
+       lastName: 'Pi',
+       age: 20,
+       generation: 10,
+       modulos: ['Node', 'Cloud'],
+   },
+   {
+       name: 'Ale',
+       lastName: 'Pa',
+       age: 30,
+       generation: 1,
+       modulos: ['React'],
+   }
+]
+
+let lista = document.createElement('ul');
+let body = document.querySelector('body');
+lista.setAttribute("class", "koders")
+
+body.appendChild(lista);
+
+const asigna = (arr) =>{
+koders.forEach((koder) => {
     let item = document.createElement('li');
-    if (i === 0) {
-        item.textContent = `Home`;
-        list.appendChild(item);
-        item.setAttribute("class", "item_menu");
-    } else if (i === 1) {
-        item.textContent = `Products`;
-        list.appendChild(item);
-        item.setAttribute("class", "item_menu");
-    } else {
-        item.textContent = `About Us`;
-        list.appendChild(item);
-        item.setAttribute("class", "item_menu");
-    }
+    console.log(koder.name, koder.lastName, koder.age, koder.generation, koder.modulos);
+    item.textContent = `Nombre: ${koder.name} Apellido: ${koder.lastName} Edad: ${koder.age}  Generacion: ${koder.generation} Modulo: ${koder.modulos}`;
+    lista.appendChild(item);
+    item.classList.add('item_koder');
+} );
+
+return;
 }
+asigna(koders);
