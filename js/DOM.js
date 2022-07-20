@@ -178,12 +178,13 @@ lista.setAttribute("class", "koders")
 body.appendChild(lista);
 
 const asigna = (arr) =>{
-koders.forEach((koder) => {
+arr.forEach((koder) => {
     let item = document.createElement('li');
-    console.log(koder.name, koder.lastName, koder.age, koder.generation, koder.modulos);
+    //console.log(koder.name, koder.lastName, koder.age, koder.generation, koder.modulos);
     item.textContent = `Nombre: ${koder.name} Apellido: ${koder.lastName} Edad: ${koder.age}  Generacion: ${koder.generation} Modulo: ${koder.modulos}`;
     lista.appendChild(item);
-    item.classList.add('item_koder');
+    
+    item.setAttribute("class", "item_koder");
 } );
 
 return;
