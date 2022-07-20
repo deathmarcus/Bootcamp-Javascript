@@ -147,46 +147,44 @@
 // 1. Generar una lista con la clase "koders"
 // 2. Agregar a cada koder en esa lista
 // 3. A todos los koders agregarles la clase "item koder"
-let koders =  [
-   {
-       name: 'Ferdinand',
-       lastName: 'Bracho',
-       age: 30,
-       generation: 2,
-       modulos: ['js','python', 'git'],
-   },
-   {
-       name: 'Alfredo',
-       lastName: 'Pi',
-       age: 20,
-       generation: 10,
-       modulos: ['Node', 'Cloud'],
-   },
-   {
-       name: 'Ale',
-       lastName: 'Pa',
-       age: 30,
-       generation: 1,
-       modulos: ['React'],
-   }
-]
+// let koders =  [
+//    {
+//        name: 'Ferdinand',
+//        lastName: 'Bracho',
+//        age: 30,
+//        generation: 2,
+//        modulos: ['js','python', 'git'],
+//    },
+//    {
+//        name: 'Alfredo',
+//        lastName: 'Pi',
+//        age: 20,
+//        generation: 10,
+//        modulos: ['Node', 'Cloud'],
+//    },
+//    {
+//        name: 'Ale',
+//        lastName: 'Pa',
+//        age: 30,
+//        generation: 1,
+//        modulos: ['React'],
+//    }
+// ]
 
-let lista = document.createElement('ul');
-let body = document.querySelector('body');
-lista.setAttribute("class", "koders")
+// let body = document.querySelector('body');
+// let lista = document.createElement('ul');
+// lista.setAttribute("class", "koders")
 
-body.appendChild(lista);
+// body.appendChild(lista);
 
-const asigna = (arr) =>{
-arr.forEach((koder) => {
-    let item = document.createElement('li');
-    //console.log(koder.name, koder.lastName, koder.age, koder.generation, koder.modulos);
-    item.textContent = `Nombre: ${koder.name} Apellido: ${koder.lastName} Edad: ${koder.age}  Generacion: ${koder.generation} Modulo: ${koder.modulos}`;
-    lista.appendChild(item);
+
+// koders.forEach((koder) => {
+//     let item = document.createElement('li');
+//     //console.log(koder.name, koder.lastName, koder.age, koder.generation, koder.modulos);
+//     item.textContent = `Nombre: ${koder.name} Apellido: ${koder.lastName} Edad: ${koder.age}  Generacion: ${koder.generation} Modulos: ${koder.modulos}`;
+//     lista.appendChild(item);
     
-    item.setAttribute("class", "item_koder");
-} );
+//     item.setAttribute("class", "item_koder");
+// } );
 
-return;
-}
-asigna(koders);
+
