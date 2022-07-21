@@ -101,16 +101,16 @@ let posts = [
 
 let post = document.getElementById('ejercicio');
 
-let template = posts.reduce((acc, cv, index, arr) =>{
+let template = posts.reduce((acc, user, index, arr) =>{
     
     acc+= `
     <a href="#" class="list-group-item list-group-item-action ${index=== 0 ? "active" : ""}" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">${cv.userId}</h5>
-      <small>${cv.id}</small>
+      <h5 class="mb-1">${user.userId}</h5>
+      <small>${user.id}</small>
     </div>
     <p class="mb-1">${cv.title}</p>
-    <small>${cv.body}</small>
+    <small>${user.body}</small>
   </a>
     `;
     return acc;
