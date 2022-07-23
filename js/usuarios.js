@@ -346,7 +346,7 @@ let entrada = document.querySelector('.input_text');
 let buscar = document.querySelector('.find_user').addEventListener('click', () =>{
     texto = entrada.value;
     resultado = filterUSers(texto);
-    let template = ''
+    let template = '';
     resultado.forEach((element) => {
         template += `
             <div class="col">
@@ -362,11 +362,9 @@ let buscar = document.querySelector('.find_user').addEventListener('click', () =
                    </div>
                  </div>
                 </div>
-            `
-    let insertar = document.querySelector('#list_users')
+            `;
+    let insertar = document.querySelector('#list_users');
     insertar.innerHTML = template;
     }); 
-    console.log(resultado);
-
 
 });
