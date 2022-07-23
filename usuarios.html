@@ -7,33 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/events.css">
 
     <title>Document</title>
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <!-- <div id="ejercicio" class="list-group">
-        </div> -->
-        <div class="eventos">
-            <h1>On Mouse Over</h1>
-        </div>
-        <div class="imagen">
-        <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" border="0" src="/assets/R.jfif" alt="" srcset="" width="32" height="32">
+    <h1>Usuarios</h1>
+    <div class="container">
+        <div class="row">
+            <input type="text" class="form-control input_text" placeholder="Buscan coincidencia"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+            <button class="mt-4 search-button btn btn-primary find_user">
+                Buscar
+            </button>
+
+            <div>
+                <ul id="list_users" class="mt-3" list-group list-group-flush>
+                    <!-- Inseter -->
+                </ul>
+            </div>
         </div>
     </div>
 
-</div>
-
-
-
-    <!-- <script src="/js/ejercicioDOM.js"></script> -->
-    <script src="/js/events.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="/js/usuarios.js"></script>
 </body>
 
 </html>
